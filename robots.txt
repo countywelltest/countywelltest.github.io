@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://countywelltest.github.io/sitemap.xml
