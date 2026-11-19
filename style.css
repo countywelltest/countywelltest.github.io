@@ -210,3 +210,34 @@ option.soon{color:#5f6368}
 .pf-states,.pf-states ul{list-style:none;margin:0;padding:0}.pf-states>li{margin-bottom:8px}.pf-st{font-weight:700;color:var(--ink);display:block}
 .pf-states ul li{padding-left:14px}.pf-states a{display:inline-flex;align-items:center;min-height:44px}
 .pk-wrap.js .picker-fallback{display:none}
+/* in brief (local context), dated evidence, nearby meta */
+.brief{border-bottom:0}.brief h2{margin-bottom:12px}
+.brief-p{font:400 1.2rem/1.6 var(--serif);color:var(--ink);max-width:40em;margin:0 0 14px}.brief-p .src{font:500 .82rem/1.4 var(--sans);margin-left:4px}
+.dated{display:inline-flex;align-items:center;gap:6px;margin:6px 0 0;padding:3px 10px;border-radius:999px;background:var(--cream);border:1px solid #ecdcb5;color:#5a4416;font:600 .8rem/1.4 var(--sans)}
+th .dated,dd .dated{display:flex;width:fit-content}.dated .ic{width:15px;height:15px;flex:none}
+.dated-note{display:flex;gap:10px;align-items:flex-start;margin:14px 0;padding:12px 16px;border-radius:var(--r-s);background:var(--cream);border:1px solid #ecdcb5;color:#4b3a17;font-size:.93rem;line-height:1.5}.dated-note .ic{flex:none;margin-top:2px;color:var(--brass-t)}
+.dated-inc{color:#5a4416;font-weight:600}
+.chip-meta{font-size:.78rem;font-weight:600;color:var(--muted);letter-spacing:.02em}
+
+/* signup form tokens (used by shared/signup.css) */
+:root{--signup-accent:var(--teal);--signup-accent-hover:var(--teal-d);--signup-surface:var(--mist)}
+/* Shared email-signup band. Uses each site's existing tokens; set --signup-accent, --signup-accent-hover, --signup-surface on :root. */
+.mogul-signup{background:var(--signup-surface,var(--sand2,var(--mist,var(--parch,#f4efe6))));border-top:1px solid var(--line,#e3d9c6);padding:48px 0 40px}
+.mogul-signup-card{max-width:640px}
+.mogul-signup h2{font-family:var(--serif,Georgia,serif);font-weight:560;letter-spacing:-.015em;line-height:1.18;color:var(--ink,#1b2622);margin:0 0 .4em;font-size:clamp(1.45rem,2.6vw,1.85rem)}
+.mogul-signup-lede{margin:0 0 1.15em;font-size:1.05rem;line-height:1.6;color:var(--text,#2c3632);max-width:38em}
+.mogul-signup-form{margin:0}
+.mogul-signup-row{margin:0 0 14px}
+.mogul-signup-row label,.mogul-check{display:block;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted,#56605b);margin:0 0 6px}
+.mogul-signup-row input[type=email]{width:100%;min-height:52px;font:inherit;font-size:1rem;color:var(--ink,#1b2622);background:var(--card,#fff);border:1.5px solid var(--line2,#cdbfa5);border-radius:var(--r-s,12px);padding:0 14px}
+.mogul-signup-row input[type=email]:focus{border-color:var(--signup-accent,var(--ink,#1b2622));outline:3px solid var(--focus,#b8640f);outline-offset:0}
+.mogul-check{display:flex;align-items:flex-start;gap:10px;text-transform:none;letter-spacing:0;font-size:1rem;font-weight:500;color:var(--text,#2c3632);line-height:1.45;margin:0 0 16px;cursor:pointer}
+.mogul-check input{width:22px;height:22px;min-width:22px;margin:2px 0 0;accent-color:var(--signup-accent,var(--ink,#1b2622));flex:none}
+.mogul-promise,.mogul-note{margin:0 0 12px;font-size:.92rem;line-height:1.55;color:var(--muted,#56605b)}
+.mogul-promise{color:var(--text,#2c3632)}
+.mogul-signup-submit{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;margin:4px 0 10px;border:0;border-radius:14px;background:var(--signup-accent,var(--ink,#1b2622));color:#fff;font:700 1rem/1 var(--sans,system-ui,sans-serif);cursor:pointer}
+.mogul-signup-submit:hover{background:var(--signup-accent-hover,#111);color:#fff}
+.mogul-signup-submit:disabled{opacity:.6;cursor:not-allowed}
+.mogul-signup-status{margin:8px 0 0;font-size:1.02rem;line-height:1.55;color:var(--ink,#1b2622)}
+.mogul-hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+@media print{.mogul-signup{display:none}}
