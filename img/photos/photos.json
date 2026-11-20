@@ -2,30 +2,30 @@
  "hero": {
   "files": {
    "1600": [
-    "barn-1600.webp",
+    "home-1600.webp",
     1600,
-    1066
-   ],
-   "800": [
-    "barn-800.webp",
-    800,
-    533
+    913
    ],
    "1000": [
-    "barn-1000.webp",
+    "home-1000.webp",
     1000,
-    666
+    570
+   ],
+   "800": [
+    "home-800.webp",
+    800,
+    456
    ],
    "600": [
-    "barn-600.webp",
+    "home-600.webp",
     600,
-    400
+    342
    ]
   },
-  "alt": "Walnut Farm surrounded by green grass",
-  "photographer": "Guido Klinge",
-  "profile": "https://unsplash.com/@chilibean",
-  "page": "https://unsplash.com/photos/walnut-farm-surrounded-by-green-grass-OEHZaqr4rlM",
+  "alt": "A large white farmhouse with a wrap-around porch",
+  "photographer": "Roger Starnes Sr",
+  "profile": "https://unsplash.com/@rstar50",
+  "page": "https://unsplash.com/photos/a-large-white-farmhouse-with-a-wrap-around-porch-pGH1-iHveX0",
   "license": "Unsplash License",
   "license_url": "https://unsplash.com/license",
   "checked": "2026-11-19"

@@ -272,6 +272,8 @@ thead th{letter-spacing:0!important;text-transform:none!important;font-size:.9re
 @media(max-width:959px){.hero .hero-grid{padding:0 24px}.hero-photo{margin:0 -24px}.hero{overflow-x:clip}}
 @media(max-width:600px){.hero .hero-grid{padding:0 18px}.hero-photo{margin:0 -18px}}
 @media(min-width:960px){.hero .hero-grid{padding:0 24px}}
+/* Nov 19 2026: farmhouse hero, keep the house centred in the tall crop */
+.hero-photo img{object-position:40% 50%}
 /* Shared email-signup band. Uses each site's existing tokens; set --signup-accent, --signup-accent-hover, --signup-surface on :root. */
 .mogul-signup{background:var(--signup-surface,var(--sand2,var(--mist,var(--parch,#f4efe6))));border-top:1px solid var(--line,#e3d9c6);padding:48px 0 40px}
 .mogul-signup-card{max-width:640px}
