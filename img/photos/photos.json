@@ -1,0 +1,75 @@
+{
+ "hero": {
+  "files": {
+   "1600": [
+    "barn-1600.webp",
+    1600,
+    1066
+   ],
+   "800": [
+    "barn-800.webp",
+    800,
+    533
+   ],
+   "1000": [
+    "barn-1000.webp",
+    1000,
+    666
+   ],
+   "600": [
+    "barn-600.webp",
+    600,
+    400
+   ]
+  },
+  "alt": "Walnut Farm surrounded by green grass",
+  "photographer": "Guido Klinge",
+  "profile": "https://unsplash.com/@chilibean",
+  "page": "https://unsplash.com/photos/walnut-farm-surrounded-by-green-grass-OEHZaqr4rlM",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "checked": "2026-11-19"
+ },
+ "well": {
+  "files": {
+   "1000": [
+    "well-1000.webp",
+    1000,
+    667
+   ],
+   "600": [
+    "well-600.webp",
+    600,
+    400
+   ]
+  },
+  "alt": "Old wooden well with blue roof in grassy yard",
+  "photographer": "Anna Blake",
+  "profile": "https://unsplash.com/@blake_a",
+  "page": "https://unsplash.com/photos/old-wooden-well-with-blue-roof-in-grassy-yard-RyJnYL5NwRw",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "checked": "2026-11-19"
+ },
+ "spigot": {
+  "files": {
+   "1000": [
+    "spigot-1000.webp",
+    1000,
+    664
+   ],
+   "600": [
+    "spigot-600.webp",
+    600,
+    398
+   ]
+  },
+  "alt": "silver faucet with water droplets",
+  "photographer": "taichi nakamura",
+  "profile": "https://unsplash.com/@naka_mura",
+  "page": "https://unsplash.com/photos/silver-faucet-with-water-droplets-_QzQ-C6PkXw",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "checked": "2026-11-19"
+ }
+}

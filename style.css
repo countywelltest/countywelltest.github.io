@@ -1,28 +1,5 @@
-/* Self-hosted Google Fonts, latin subset. Licensed under the SIL Open Font License 1.1. */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url(/fonts/inter.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Newsreader';
-  font-style: italic;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url(/fonts/newsreader-italic.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Newsreader';
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url(/fonts/newsreader.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* Self-hosted Google Fonts, latin subset. SIL Open Font License 1.1. Figtree (headings and text). */
+@font-face{font-family:'Figtree';font-style:normal;font-weight:400 900;font-display:swap;src:url(/fonts/figtree.woff2) format('woff2')}
 /* County Well Test — editorial design v3. Newsreader (display) + Inter (text), self-hosted. */
 :root{--ink:#132a2e;--text:#283c3f;--muted:#536567;--teal:#0e5a61;--teal-d:#0a434a;--teal-l:#2f7d82;--sea:#dfeeea;--mist:#f1f6f4;--paper:#fbfbf8;--card:#fff;--line:#dbe5e1;--line2:#c9d8d3;--brass:#b8892f;--brass-t:#7a5212;--cream:#fbf4e4;--focus:#c98a1b;
 --serif:"Newsreader",Georgia,"Iowan Old Style",serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--r:18px;--r-s:12px;
@@ -221,6 +198,80 @@ th .dated,dd .dated{display:flex;width:fit-content}.dated .ic{width:15px;height:
 
 /* signup form tokens (used by shared/signup.css) */
 :root{--signup-accent:var(--teal);--signup-accent-hover:var(--teal-d);--signup-surface:var(--mist)}
+
+/* ===== v4 "human" redesign, Nov 19 2026. Benchmarks: Tap Score, Culligan, EWG (comps/human-redesign-home.md).
+   One friendly grotesque (Figtree), white + warm stone, deep green-teal ink, a yellow mark, real rural photography. ===== */
+:root{--ink:#1c2f2c;--text:#2a3b38;--muted:#53625f;--teal:#17655f;--teal-d:#0f4a45;--teal-l:#2c8079;--sea:#e3efec;--mist:#f6f4ef;--paper:#ffffff;--card:#fff;--line:#e2e0d8;--line2:#c4c1b5;--brass:#e0a91c;--brass-t:#7a5212;--cream:#fbf4e4;--focus:#d8930b;
+--serif:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;--sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--r:6px;--r-s:6px;--sh:none;--sh-h:none}
+body{font-size:17.5px;font-feature-settings:normal}
+h1,h2,h3{font-weight:800;letter-spacing:-.025em;line-height:1.08}
+h3{font-weight:700;letter-spacing:-.01em}
+.eyebrow{font:600 .98rem/1.3 var(--sans);letter-spacing:0;text-transform:none;color:var(--teal)}
+.mark{width:32px;height:32px}.wm-text{font:800 1.25rem/1 var(--sans);letter-spacing:-.02em}.wm-text em{font-style:normal;font-weight:800;color:var(--teal)}
+.site-head{background:#fff;backdrop-filter:none}
+.main-nav a{border-radius:0!important;background:none!important;border-bottom:2px solid transparent;font-weight:600}.main-nav a:hover{border-bottom-color:var(--line2)}.main-nav a[aria-current]{color:var(--ink)!important;border-bottom-color:var(--teal)}
+.notice{background:var(--mist)}
+/* home hero: photo bleeding left, copy right (Tap Score / Culligan pattern) */
+.hero{background:var(--mist)!important;border-bottom:0;padding:0}
+.hero .hero-grid{display:grid;grid-template-columns:1fr;gap:0;padding:0;align-items:stretch}
+.hero-photo{margin:0 -18px;position:relative}
+.hero-photo img{display:block;width:100%;height:clamp(220px,52vw,420px);object-fit:cover}
+.hero-photo figcaption{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.62);color:#fff;font-size:.75rem;padding:3px 8px}
+.hero-photo figcaption a{color:#fff}
+.hero .hero-copy{padding:30px 0 40px}
+@media (min-width:960px){.hero .hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px}
+ .hero-photo{margin:0 0 0 calc(-1*max(24px,(100vw - 1180px)/2 + 24px))}.hero-photo img{position:absolute;inset:0;height:100%}
+ .hero .hero-copy{padding:64px 0 60px}}
+.display{font-size:clamp(2.3rem,4.8vw,3.7rem)!important;font-weight:800!important;letter-spacing:-.035em!important;line-height:1.02!important}
+.display em{font-style:normal!important;font-weight:800!important;color:var(--teal)!important;box-shadow:inset 0 -.22em 0 #f6d77c}
+.trustline{margin:18px 0 0;font-size:.95rem;color:var(--muted);max-width:40em}
+/* counties: plain rows, not floating cards */
+.county-grid{gap:0 34px!important}
+.county-card{border:0!important;border-top:1px solid var(--line2)!important;border-radius:0!important;box-shadow:none!important;background:none!important;padding:18px 0 20px!important}
+.county-card:hover{transform:none!important}.county-card:hover .cc-name{color:var(--teal);text-decoration:underline;text-underline-offset:4px}
+.cc-icon{display:none!important}
+.cc-state{letter-spacing:0!important;text-transform:none!important;font-weight:600!important;font-size:.9rem!important}
+.cc-name{font:800 1.45rem/1.15 var(--sans)!important;letter-spacing:-.02em}
+.pull{background:#1c2f2c!important}
+.pull blockquote{font-family:var(--sans)!important;font-weight:600!important;font-style:normal!important;letter-spacing:-.015em}
+.pull blockquote:before{display:none!important}
+.feature{border:0!important;border-top:3px solid var(--teal)!important;border-radius:0!important;background:none!important;box-shadow:none!important;padding:16px 0 0!important}
+.f-ic{border-radius:50%!important;background:var(--sea)!important;color:var(--teal)!important}
+.row2{display:grid;gap:26px;align-items:center}.row2 figure{margin:0}.row2 img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}
+.row2 .fig-credit{font-size:.78rem;color:var(--muted);margin-top:6px}.row2 .fig-credit a{color:inherit}
+@media (min-width:900px){.row2{grid-template-columns:1fr 1fr;gap:60px}.row2.flip>figure{order:2}}
+.caution{border-radius:0!important;border:0!important;border-left:4px solid var(--brass)!important;background:var(--mist)!important}
+/* inner pages */
+.page-hero,.hero-county{background:var(--mist)!important}
+.hc-art{margin:0}.hc-art img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.hc-art figcaption{font-size:.75rem;color:var(--muted);margin-top:6px}.hc-art figcaption a{color:inherit}
+.verified-pill{border-radius:4px!important;box-shadow:none!important}
+.keyfigs div{border-radius:0!important;border:0!important;border-left:3px solid var(--teal)!important;background:none!important;padding:4px 18px!important;box-shadow:none!important}
+.keyfigs dt{letter-spacing:0!important;text-transform:none!important;font-size:.9rem!important}.keyfigs dd{font-family:var(--sans)!important;font-weight:800!important}
+.toc-h{letter-spacing:0!important;text-transform:none!important}
+.tw{border:0!important;border-top:3px solid var(--ink)!important;border-radius:0!important;box-shadow:none!important}
+.tests thead,.compare thead{background:var(--mist)!important}
+thead th{letter-spacing:0!important;text-transform:none!important;font-size:.9rem!important;color:var(--ink)!important}
+.price{font-family:var(--sans)!important;font-weight:800!important}
+.panel{border-radius:0!important;box-shadow:none!important;border:0!important;border-top:3px solid var(--teal)!important;background:none!important;padding:16px 0 0!important}
+.card{border-radius:0!important;box-shadow:none!important;border:0!important;border-top:3px solid var(--ink)!important;padding-left:0!important;padding-right:0!important;background:none!important}
+.kind{letter-spacing:0!important;text-transform:none!important;border-radius:4px!important}
+.verified{border-radius:4px!important}
+.btn{border-radius:5px!important}
+.chip{border-radius:4px!important}
+.faqs details{border-radius:0!important;border:0!important;border-bottom:1px solid var(--line)!important;box-shadow:none!important;background:none!important}
+.picker{border-radius:6px!important;box-shadow:none!important}
+.hero .picker{border:1px solid var(--line2)!important}
+.pk-field label{letter-spacing:0!important;text-transform:none!important;font-size:.92rem!important;color:var(--ink)!important}
+.pk-field select,.pk-go,.pk-soon{border-radius:5px!important}
+.method-note{border-radius:0!important}
+.site-foot{background:#1c2f2c!important}
+.indep{border-radius:0!important}
+.hero .pk-row{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.hero .pk-row{grid-template-columns:1fr 1fr!important}
+@media(max-width:959px){.hero .hero-grid{padding:0 24px}.hero-photo{margin:0 -24px}.hero{overflow-x:clip}}
+@media(max-width:600px){.hero .hero-grid{padding:0 18px}.hero-photo{margin:0 -18px}}
+@media(min-width:960px){.hero .hero-grid{padding:0 24px}}
 /* Shared email-signup band. Uses each site's existing tokens; set --signup-accent, --signup-accent-hover, --signup-surface on :root. */
 .mogul-signup{background:var(--signup-surface,var(--sand2,var(--mist,var(--parch,#f4efe6))));border-top:1px solid var(--line,#e3d9c6);padding:48px 0 40px}
 .mogul-signup-card{max-width:640px}
